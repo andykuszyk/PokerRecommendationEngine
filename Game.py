@@ -1,4 +1,4 @@
-import Round.Round as Round
+from Round import *
 
 class Game:
     

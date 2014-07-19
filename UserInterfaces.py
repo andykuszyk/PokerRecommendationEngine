@@ -16,13 +16,13 @@ class CommandLineInterface:
         self.AddHandToGame()
         
     def AddHandToGame(self):
-        card1 = Card(input("Enter the code for card 1: "))
-        card1 = Card(input("Enter the code for card 2: "))
-        _game.CreateNewRound(card1,card2)
-        GetCurrentRecommendation()
+        card1 = Card(raw_input("Enter the code for card 1: "))
+        card2 = Card(raw_input("Enter the code for card 2: "))
+        self._game.CreateNewRound(card1,card2)
+        self.GetCurrentRecommendation()
         
     def GetCurrentRecommendation(self):
-        recommendation = RecommendationEngine.CreateRecommendation(self._game.GetCurrentRound())
+        recommendation = CreateRecommendation(self._game.GetCurrentRound())
         print recommendation.Description()
         
         

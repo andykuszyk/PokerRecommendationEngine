@@ -1,6 +1,7 @@
-class RecommendationEngine:
-    def CreateRecommendation(round):
-        return Recommendation()
+def CreateRecommendation(round):
+    for card in round.GetHand():
+        print "Card with rank " + str(card.GetRank()) + " and suit " + str(card.GetSuit())
+    return Recommendation()
         
         
 class Recommendation:

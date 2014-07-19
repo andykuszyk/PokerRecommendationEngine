@@ -11,6 +11,6 @@ class Round:
     def AddTurnOrRiver(self,card1):
         self._hand.append(card1)
         
-    def GetHand(self,card1):
+    def GetHand(self):
         return self._hand    
     

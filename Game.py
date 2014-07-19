@@ -15,4 +15,4 @@ class Game:
         self._rounds.append(Round(card1, card2))
         
     def GetCurrentRound(self):
-        return self._rounds[self._rounds.count()-1]
+        return self._rounds[len(self._rounds)-1]

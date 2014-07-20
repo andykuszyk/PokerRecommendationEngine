@@ -1,5 +1,4 @@
-from Game import *
-from Card import *
+from GameObjects import *
 from RecommendationEngine import *
 import abc
 
